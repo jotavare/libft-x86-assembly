@@ -1,6 +1,6 @@
 ## About
 
-This project aims to convert functions from my **Libft** library to **x86 assembly using NASM**. The goal is to understand x86 assembly better and assess the efficiency of these functions compared to their C counterparts.
+This project aims to convert the `C` functions from my **Libft** library to `x86 Assembly` with **NASM**. The goal is to understand x86 assembly better and assess the efficiency of these functions compared to their C counterparts.
 
 | Repository | Description |
 | :--------- | :---------- |
