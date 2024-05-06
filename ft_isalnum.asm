@@ -33,14 +33,13 @@ ft_isalnum:
 
 .is_alnum:
     mov eax, 1
-    jmp .exit
+    .exit
 
 .not_alnum:
     mov eax, 0
-    jmp .exit
+    .exit
 
 .exit:
     pop ebp
     mov ebx, 1
     ret
-    

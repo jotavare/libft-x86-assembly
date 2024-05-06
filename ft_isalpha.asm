@@ -36,3 +36,12 @@ ft_isalpha:
 .exit:
     pop ebp
     ret
+
+; stack layout
+; ------------
+; +8 : int c
+; +4 : return address
+;  0 : ebp <- esp
+
+; if it was variable inside the function, it would be
+; [ebp - 4] = int c
