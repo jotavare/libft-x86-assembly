@@ -6,8 +6,4 @@ To access the repository and the documentation where I learned to code in `x86 A
 
 ## CONTRIBUTING
 
-If you find any issues or have suggestions for improvements, feel free to fork the repository and open an issue or submit a pull request.
-
-## LICENSE
-
-This project is available under the MIT License. For further details, please refer to the [LICENSE](https://github.com/jotavare/libft-x86-assembly/blob/main/LICENSE) file.
+This repository is finished and not open to changes.
