@@ -3,8 +3,8 @@
 
 ; ASCII 0-9: 48-57
 
-.section .text
-    .global ft_isdigit
+section .text
+    global ft_isdigit
 
 ft_isdigit:
     push ebp

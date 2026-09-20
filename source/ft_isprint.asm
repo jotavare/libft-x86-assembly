@@ -3,8 +3,8 @@
 
 ; ASCII : 32 - 126
 
-.section .text
-    .global ft_isprint
+section .text
+    global ft_isprint
 
 ft_isprint:
     push ebp

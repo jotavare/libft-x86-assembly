@@ -3,8 +3,8 @@
 
 ; ASCII : 0-127
 
-.section .text
-    .global ft_isascii
+section .text
+    global ft_isascii
 
 ft_isascii:
     push ebp

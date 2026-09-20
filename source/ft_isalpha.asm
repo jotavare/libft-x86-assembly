@@ -5,8 +5,8 @@
 ; ASCII A-Z: 65-90
 ; ASCII a-z: 97-122
 
-.section .text
-    .global ft_isalpha
+section .text
+    global ft_isalpha
 
 ft_isalpha:
     push ebp

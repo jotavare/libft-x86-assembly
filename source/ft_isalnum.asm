@@ -5,8 +5,8 @@
 ; ASCII A-Z: 65-90
 ; ASCII a-z: 97-122
 
-.section .text
-    .global ft_isalnum
+section .text
+    global ft_isalnum
 
 ft_isalnum:
     push ebp
@@ -29,7 +29,7 @@ ft_isalnum:
     cmp eax, 97
     jl .not_alnum
     cmp eax, 122
-    jle .is_alnum
+    jg .not_alnum
 
 .is_alnum:
     mov eax, 1
@@ -41,6 +41,5 @@ ft_isalnum:
 
 .exit:
     pop ebp
-    mov ebx, 1
     ret
     
