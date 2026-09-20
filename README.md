@@ -11,9 +11,12 @@ the stack via `[ebp + 8]`), so both the assembly and the C test files must be
 assembled/compiled and linked as 32-bit, e.g.:
 
 ```sh
-nasm -f elf32 source/ft_isalnum.asm -o ft_isalnum.o
+for f in ft_isalnum ft_isalpha ft_isascii ft_isdigit ft_isprint; do
+    nasm -f elf32 source/$f.asm -o $f.o
+done
 gcc -m32 -c source/assembly_test.c -o assembly_test.o
-gcc -m32 ft_isalnum.o ft_isprint.o ... assembly_test.o -o assembly_test
+gcc -m32 ft_is*.o assembly_test.o -o assembly_test
+./assembly_test
 ```
 
 ## CONTRIBUTING
