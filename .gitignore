@@ -1,1 +1,11 @@
 .vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+*.o
+*.out
+a.out
+assembly_test
+assembly_speed_test
