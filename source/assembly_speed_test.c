@@ -5,6 +5,8 @@
 
 #define NUM_TESTS 1
 
+void test_speed(int (*function)(int));
+
 double measure_time(int (*function)(int))
 {
     clock_t start, end;

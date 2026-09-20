@@ -7,9 +7,12 @@
     .global ft_isdigit
 
 ft_isdigit:
-    mov eax, 48
+    push ebp
+    mov ebp, esp
+    mov eax, [ebp + 8]
+    cmp eax, 48
     jl .not_digit
-    mov eax, 57
+    cmp eax, 57
     jle .is_digit
 
 .not_digit:
@@ -21,5 +24,5 @@ ft_isdigit:
     jmp .exit
 
 .exit:
+    pop ebp
     ret
-    

@@ -25,7 +25,7 @@ ft_isprint:
     mov eax, 1
     jmp .exit
 
-.exit
+.exit:
     pop ebp
     ret
     

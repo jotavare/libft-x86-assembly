@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include "libft_asm.h"
 
 void test_ft_isalnum(void)

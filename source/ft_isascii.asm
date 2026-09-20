@@ -7,9 +7,12 @@
     .global ft_isascii
 
 ft_isascii:
-    mov eax, 0
+    push ebp
+    mov ebp, esp
+    mov eax, [ebp + 8]
+    cmp eax, 0
     jl .not_ascii
-    mov eax, 127
+    cmp eax, 127
     jle .is_ascii
 
 .not_ascii:
@@ -21,5 +24,5 @@ ft_isascii:
     jmp .exit
 
 .exit:
+    pop ebp
     ret
-    

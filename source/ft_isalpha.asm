@@ -17,7 +17,7 @@ ft_isalpha:
     cmp eax, 65
     jl .not_alpha
     cmp eax, 90
-    jle .not_alpha
+    jle .is_alpha
 
 .is_lower:
     cmp eax, 97
